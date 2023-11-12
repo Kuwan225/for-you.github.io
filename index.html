@@ -12,9 +12,17 @@
     <span>You</span>
     <span>&hearts;</span>
 
-    <audio controls autoplay style="opacity: 0; position: absolute;">
-      <source src="song.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <audio id="myAudio" controls src="song.mp3"></audio>
+
+    <script>
+      window.onload = async function () {
+        var audio = document.getElementById("myAudio");
+        try {
+          await audio.play();
+        } catch (error) {
+          console.error("Error playing audio:", error.message);
+        }
+      };
+    </script>
   </body>
 </html>
