@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span:nth-child(1){
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+    opacity: 0;
+    /* animation-name: showText;
+    animation-duration: 3s;
+    animation-delay: 1s; */
+    animation: showText 2s linear 1s forwards;
+    /* animation-iteration-count: infinite; */
+}
+span:nth-child(2){
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+    opacity: 0;
+    /* animation-name: showText;
+    animation-duration: 3s;
+    animation-delay: 2s; */
+    animation: showText 2s linear 2s forwards;
+
+    /* animation-iteration-count: infinite; */
+}
+span:nth-child(3){
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+    opacity: 0;
+    /* animation-name: showText;
+    animation-duration: 3s;
+    animation-delay: 3s; */
+    animation: showText 2s linear 3s forwards;
+    /* animation-iteration-count: infinite; */
+}
+span:nth-child(4){
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+    opacity: 0;
+    animation: showText 2s linear 4s forwards;
+}
+
+@keyframes showText {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes hideText {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
